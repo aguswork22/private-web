@@ -1,17 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <title>Private Page</title>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maaf, Graciela</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+    .card {
+      background-color: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+    h1 {
+      color: #ff4081;
+      font-size: 36px;
+    }
+    p {
+      font-size: 18px;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+    .heart {
+      font-size: 48px;
+      color: red;
+      margin: 20px 0;
+      animation: pulse 1s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+  </style>
 </head>
 <body>
-<script>
-  var password = prompt("Masukkan password:");
-  if (password !== "rahasia123") {
-    document.body.innerHTML = "Akses ditolak. Password salah!";
-  } else {
-    document.write("<h1>Selamat Datang!</h1><p>Ini adalah konten rahasia kamu.</p>");
-  }
-</script>
+  <div class="card">
+    <h1>Untuk Graciela Zelda Mulianto</h1>
+    <div class="heart">❤️</div>
+    <p>
+      Aku tahu, hari ini aku buat kamu nunggu tanpa kabar selama 10 jam. Aku sangat menyesal, dan itu bukan sikap yang pantas kamu terima.
+    </p>
+    <p>
+      Maaf ya, sayang… Bukan maksud aku buat kamu khawatir atau kecewa. Aku cuma ingin kamu tahu, kamu sangat berarti buat aku. Aku janji akan jadi lebih baik dan lebih pengertian lagi ke depannya.
+    </p>
+    <p>
+      Kalau kamu bersedia, aku pengen tebus semuanya lewat waktu berkualitas yang bisa kita habiskan bareng. Aku kangen senyum kamu hari ini. 🌅
+    </p>
+    <p><strong>Maafin aku ya, Cila 🥺💗</strong></p>
+  </div>
 </body>
 </html>
