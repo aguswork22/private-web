@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Private Page</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+<script>
+  var password = prompt("Masukkan password:");
+  if (password !== "rahasia123") {
+    document.body.innerHTML = "Akses ditolak. Password salah!";
+  } else {
+    document.write("<h1>Selamat Datang!</h1><p>Ini adalah konten rahasia kamu.</p>");
+  }
+</script>
+</body>
+</html>
