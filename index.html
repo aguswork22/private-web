@@ -1,61 +1,69 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maaf, Graciela</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Surat Cinta</title>
   <style>
     body {
-      background: linear-gradient(to right, #fceabb, #f8b500);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #333;
+      background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+      color: #4e0034;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       text-align: center;
-      padding: 50px;
+      padding: 20px;
     }
-    .card {
-      background-color: white;
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+
+    #content {
+      display: none;
       max-width: 600px;
-      margin: auto;
+      background-color: #ffffffc2;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      animation: fadeIn 2s ease-in-out;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     h1 {
-      color: #ff4081;
-      font-size: 36px;
+      color: #d81b60;
     }
+
     p {
-      font-size: 18px;
-      margin-top: 20px;
-      line-height: 1.6;
+      font-size: 1.2em;
     }
-    .heart {
-      font-size: 48px;
+
+    .akses-ditolak {
       color: red;
-      margin: 20px 0;
-      animation: pulse 1s infinite;
-    }
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.2); }
-      100% { transform: scale(1); }
+      font-weight: bold;
+      font-size: 1.3em;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Untuk Graciela Zelda Mulianto</h1>
-    <div class="heart">❤️</div>
-    <p>
-      Aku tahu, hari ini aku buat kamu nunggu tanpa kabar selama 10 jam. Aku sangat menyesal, dan itu bukan sikap yang pantas kamu terima.
-    </p>
-    <p>
-      Maaf ya, sayang… Bukan maksud aku buat kamu khawatir atau kecewa. Aku cuma ingin kamu tahu, kamu sangat berarti buat aku. Aku janji akan jadi lebih baik dan lebih pengertian lagi ke depannya.
-    </p>
-    <p>
-      Kalau kamu bersedia, aku pengen tebus semuanya lewat waktu berkualitas yang bisa kita habiskan bareng. Aku kangen senyum kamu hari ini. 🌅
-    </p>
-    <p><strong>Maafin aku ya, Cila 🥺💗</strong></p>
+  <div id="content">
+    <h1>Untuk Graciela Zelda Mulianto 💖</h1>
+    <p>Maaf ya sayang karena seharian aku nggak kasih kabar dan nggak bales chat selama 10 jam.</p>
+    <p>Bukan karena aku lupa atau nggak peduli, tapi aku tahu, itu bikin kamu ngerasa nggak nyaman.</p>
+    <p>Aku cuma mau bilang, kamu itu penting banget buat aku. Maafin aku ya, Ayangku tercinta.</p>
+    <p>Terima kasih karena selalu sabar dan pengertian. Aku janji akan lebih perhatian dan nggak bikin kamu nungguin aku lagi.</p>
+    <p>Love you always, Ay. 💌</p>
   </div>
+
+  <script>
+    var password = prompt("Masukkan password untuk membuka surat ini:");
+    if (password === "Love You Ay") {
+      document.getElementById("content").style.display = "block";
+    } else {
+      document.body.innerHTML = "<p class='akses-ditolak'>Akses Ditolak. Password salah 💔</p>";
+    }
+  </script>
 </body>
 </html>
